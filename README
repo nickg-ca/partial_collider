@@ -1,0 +1,9 @@
+This is a silly little rust project to demonstrate that it's not safe
+to check the first few/last few characters of a sha256 hash. It simply
+brute forces them. Must be a multiple of 2 characters for start and
+end of the hash. (Simply because it's a silly poc I wrote when I was
+bored and I didn't want to make it better)
+
+Usage:
+
+cargo run --release -- FILENAME 1234 56
